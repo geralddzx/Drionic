@@ -17,17 +17,38 @@
 @import "bootstrap";
 
 #view {
+	color: white;
 	width: 75%;
 	margin: 0 auto;
 
 	#content {
-		background-color: #F8F8F8 ;
+		background-color: #4863A0 ;
 		min-height: 500px;
 		padding: 20px;
 	}
 
-	#navbar-nav {
-		margin: 0 auto;
+	#nav-container{
+		background-color: #4863A0;
+
+		.navbar-nav {
+			margin: 0 auto;
+
+			li.tab {
+				border-color: black;
+				border-right: solid;
+	   			border-width: 1px;
+
+	   			&.active {
+	   				a {
+	   					background-color: #91A1C6;
+	   				}
+	   			}
+				a {
+					color: white;
+				}
+			}
+
+		}
 	}
 }
 
