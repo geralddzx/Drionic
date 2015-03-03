@@ -1,6 +1,6 @@
 <% comments.each(function(comment) { %>
 	<%= comment.get("created_at") %>
-	<button class="btn btn-danger remove-comment" id="<%= comment.get("id") %>">Remove</button>
+	<!-- <button class="btn btn-danger remove-comment" id="<%= comment.get("id") %>">Remove</button> -->
 	<div class="comment">
 		<%= comment.escape("content") %>
 	</div>
