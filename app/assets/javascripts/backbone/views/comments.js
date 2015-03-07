@@ -29,7 +29,6 @@ Drionic.Views.Comments = Backbone.View.extend({
 	remove: function(event){
 		var id = $(event.target).attr("id")
     	var comment = this.collection.get(id)
-    	debugger
     	comment.destroy({
     		success: function(){
     			alert("Comment has been removed.")
