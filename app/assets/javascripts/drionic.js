@@ -17,6 +17,10 @@ drionic.initialize = function(){
 		$("#content").html(view.$el)
 	})
 
+	$("#contact").click(function(){
+		$("#content").html(JST["regions/contact"]())
+	})
+
 	$('#region1').trigger("click")
 }
 
